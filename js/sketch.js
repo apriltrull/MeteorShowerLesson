@@ -3,9 +3,10 @@ var meteors=[];
 function setup(){
   createCanvas (window.innerWidth, window.innerHeight);
   ellipseMode(Radius);
+  fill(255);
   colorMode(HSB);
    for(var i = 0; i < 300; i++);{
-    meteor.push(new Meteor());
+    meteors.push(new Meteor());
   }
 }
 
