@@ -2,10 +2,12 @@ var meteors=[];
 
 function setup(){
   createCanvas (window.innerWidth, window.innerHeight);
-  ellipseMode(Radius);
-  fill(255);
+  ellipseMode(RADIUS);
+//fill(255);
+  // ellipse(50, 50, 30, 30);
   colorMode(HSB);
-   for(var i = 0; i < 300; i++);{
+
+   for(var i = 0; i < 225; i++) {
     meteors.push(new Meteor());
   }
 }
@@ -15,14 +17,14 @@ function draw (){
   for(var i = 0; i < meteors.length; i++){
      meteors[i].move();
 
-    meteors[i].display();
+     meteors[i].display();
   }
 
 }
 
 function Meteor(){
-  this.size=random(5);
-  this.color=color(random(255),255,255);
+  this.size=random(4);
+  this.color=color(random(324),255,255);
   this.speed=random(10);
 
   this.x= -random(width);
